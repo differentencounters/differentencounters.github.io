@@ -15,8 +15,30 @@ function loadPageContent() {
     e.preventDefault();
     $('.container').load('about.html')
   })
+
+  $('#contact').on('click', function(e) {
+    e.preventDefault();
+    $('.container').load('contact.html')
+  })
+
+  $('#partners').on('click', function(e) {
+    e.preventDefault();
+    $('.container').load('partners.html')
+  })
+
+  $('#team').on('click', function(e) {
+    e.preventDefault();
+    $('.container').load('team.html')
+  })
+
+  $('#donate').on('click', function(e) {
+    e.preventDefault();
+    $('.container').load('donate.html')
+  })
 }
 
 $(function() {
   $('.container').load('home.html')
+
+  loadPageContent();
 })
