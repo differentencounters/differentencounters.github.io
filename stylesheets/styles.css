@@ -17,8 +17,7 @@ body {
 }
 
 .nav #nav_title a {
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 24px;
+font-family: 'Josefin Sans', sans-serif;  font-size: 24px;
   color: white;
   text-decoration: none;
 }
@@ -39,8 +38,9 @@ body {
 
 .nav_toolbar .toolbar {
   float: left;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
+  padding: 0;
   list-style: none;
   display: table;
   table-layout: fixed;
@@ -54,82 +54,80 @@ body {
 
 .nav_toolbar .toolbar li a {
   color: white;
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 14px;
+  font-family: 'Josefin Sans', sans-serif;  font-size: 14px;
 }
 
 /*.nav_toolbar .toolbar li:last-child a {
   color: orange;
-}*/
+  }*/
 
-/* GENERAL BODY STYLING */
-.container {
-  width: 60%;
-  min-height: 100%;
-  height: auto;
-  height: 100%;
-  margin: 0 auto;
-  margin-top: 6em;
-  font-family: 'Roboto Condensed', sans-serif;
-}
+  /* GENERAL BODY STYLING */
+  .container {
+    width: 60%;
+    min-height: 100%;
+    height: auto;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 6em;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
 
-.focus {
-  width: 75%;
-  background-color: lightgoldenrodyellow;
-  margin: 0 auto;
-  border: 3px solid #2EBBD8;
-  padding: 5px;
-}
+  .focus {
+    width: 75%;
+    background-color: lightgoldenrodyellow;
+    margin: 0 auto;
+    border: 3px solid #2EBBD8;
+    padding: 5px;
+  }
 
-/* TEAM PAGE STYLING */
-.personnel {
-  width: 100%;
-  display: inline-block;
-  float: left;
-  margin-bottom: 15px;
-}
+  /* TEAM PAGE STYLING */
+  .personnel {
+    width: 100%;
+    display: inline-block;
+    float: left;
+    margin-bottom: 15px;
+  }
 
-.personnel .image {
-  width: 15%;
-  float: left;
-  border: 1px solid black;
-}
+  .personnel .image {
+    width: 15%;
+    float: left;
+    border: 1px solid black;
+  }
 
-.personnel .name {
-  margin-left: 20px;
-  width: 80%;
-  float: left;
-}
-.personnel .name h3 {
-  margin: 10px 0 0 0;
-  font-size: 28px;
-}
+  .personnel .name {
+    margin-left: 20px;
+    width: 80%;
+    float: left;
+  }
+  .personnel .name h3 {
+    margin: 10px 0 0 0;
+    font-size: 28px;
+  }
 
-.personnel .title {
-  margin-left: 20px;
-  width: 80%;
-  float: left;
-}
+  .personnel .title {
+    margin-left: 20px;
+    width: 80%;
+    float: left;
+  }
 
-.personnel .title h4 {
-  margin: 0;
-}
+  .personnel .title h4 {
+    margin: 0;
+  }
 
-.personnel .bio {
-  text-align: justify;
-  float: left;
-  display: none;
-}
+  .personnel .bio {
+    text-align: justify;
+    float: left;
+    display: none;
+  }
 
-/* FOOTER */
-.footer {
-  width: 100%;
-  font-family: 'Roboto Condensed', sans-serif;
-  text-align: center;
-  margin-top: 10px;
-  clear: both;
-}
+  /* FOOTER */
+  .footer {
+    width: 100%;
+    font-family: 'Josefin Sans', sans-serif;    text-align: center;
+    margin-top: 10px;
+    clear: both;
+  }
 
-.footer h5 {
-  margin: 0;
-}
+  .footer h5 {
+    margin: 0;
+  }
