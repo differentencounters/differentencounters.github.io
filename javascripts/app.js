@@ -11,30 +11,36 @@ function displayBios() {
 }
 
 function loadPageContent() {
-  $('#about').on('click', function(e) {
+  $('.toolbar li a').on('click', function(e) {
     e.preventDefault();
-    $('.container').load('about.html')
+    var id = this.id;
+    $('.container').load(id + '.html')
   })
 
-  $('#contact').on('click', function(e) {
-    e.preventDefault();
-    $('.container').load('contact.html')
-  })
+  // $('#about').on('click', function(e) {
+  //   e.preventDefault();
+  //   $('.container').load('about.html')
+  // })
 
-  $('#partners').on('click', function(e) {
-    e.preventDefault();
-    $('.container').load('partners.html')
-  })
+  // $('#contact').on('click', function(e) {
+  //   e.preventDefault();
+  //   $('.container').load('contact.html')
+  // })
 
-  $('#team').on('click', function(e) {
-    e.preventDefault();
-    $('.container').load('team.html')
-  })
+  // $('#partners').on('click', function(e) {
+  //   e.preventDefault();
+  //   $('.container').load('partners.html')
+  // })
 
-  $('#donate').on('click', function(e) {
-    e.preventDefault();
-    $('.container').load('donate.html')
-  })
+  // $('#team').on('click', function(e) {
+  //   e.preventDefault();
+  //   $('.container').load('team.html')
+  // })
+
+  // $('#donate').on('click', function(e) {
+  //   e.preventDefault();
+  //   $('.container').load('donate.html')
+  // })
 }
 
 $(function() {
