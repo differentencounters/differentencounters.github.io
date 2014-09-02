@@ -10,6 +10,13 @@ function displayBios() {
  })
 }
 
+function loadPageContent() {
+  $('#about').on('click', function(e) {
+    e.preventDefault();
+    $('.container').load('about.html')
+  })
+}
+
 $(function() {
   $('.container').load('home.html')
 })
