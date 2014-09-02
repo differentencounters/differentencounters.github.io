@@ -52,11 +52,7 @@ body {
   width: auto;
   text-align: left;
   padding-left: 5px;
-  border-left: 1px solid rgba(196,101,45,1);
-}
-
-.nav_toolbar .toolbar li:last-child {
-  border-right: 1px solid rgba(196,101,45,1);
+  border-left: 3px solid rgba(196,101,45,1);
 }
 
 .nav_toolbar .toolbar li a {
@@ -132,6 +128,10 @@ body {
     width: 100%;
     font-family: 'Josefin Sans', sans-serif;    text-align: center;
     background-color: rgba(0,151,204,1);
+    background: -webkit-linear-gradient(left, rgba(0,151,204,1) , rgba(81,131,211,1));
+    background: -o-linear-gradient(right, rgba(0,151,204,1), rgba(81,131,211,1));
+    background: -moz-linear-gradient(right, rgba(0,151,204,1), rgba(81,131,211,1));
+    background: linear-gradient(to right, rgba(0,151,204,1) , rgba(81,131,211,1));
     color: white;
     margin-top: 10px;
     position: absolute;
