@@ -30,15 +30,17 @@
     </p>
   </div>
   <div class="partner_school_carousel">
-    <div><img src="/images/mosaic/mosaic_1.jpg"></div>
-    <div><img src="/images/mosaic/mosaic_2.jpg"></div>
-    <div><img src="/images/mosaic/mosaic_3.jpg"></div>
-    <div><img src="/images/mosaic/mosaic_4.jpg"></div>
+    <div><div class="image"><img src="/images/mosaic/mosaic_1.jpg"></div></div>
+    <div><div class="image"><img src="/images/mosaic/mosaic_2.jpg"></div></div>
+    <div><div class="image"><img src="/images/mosaic/mosaic_3.jpg"></div></div>
+    <div><div class="image"><img src="/images/mosaic/mosaic_4.jpg"></div></div>
   </div>
 </div>
 
 <script>
 $(function() {
+  loadPageContent();
+
   $('.partner_school_carousel').slick({
     dots: true,
     infinite: true,
