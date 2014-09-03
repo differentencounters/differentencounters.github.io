@@ -22,6 +22,16 @@ function pageInitializers() {
   $('html').hide();
   $('.container').load('home.html');
   $('html').fadeIn();
+  imageCarousel();
+}
+
+function imageCarousel() {
+  $("#owl-demo").owlCarousel({
+      navigation : true,
+      slideSpeed : 500,
+      paginationSpeed : 400,
+      singleItem:true
+  });
 }
 
 // URL FOR CONTACT FORM
