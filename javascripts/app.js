@@ -21,7 +21,10 @@ function loadPageContent() {
   $(document).on('click', '#mosaic', function(e) {
     e.preventDefault();
     var id = this.id;
-    $('.container').load(id + '.html')
+    $('.container').load(id + '.html');
+    setTimeout(function() {
+      imageCarousel();
+    }, 10)
   })
 }
 
@@ -29,7 +32,6 @@ function pageInitializers() {
   $('html').hide();
   $('.container').load('home.html');
   $('html').fadeIn();
-  imageCarousel();
 }
 
 function imageCarousel() {
