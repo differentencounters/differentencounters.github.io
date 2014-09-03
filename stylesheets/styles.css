@@ -161,10 +161,12 @@ body {
 
 .partner_school_carousel {
   width: 100%;
+  text-align: center;
 }
 
 .partner_school_carousel img {
-  width: 100%;
+  width: 80%;
+  border: 2px solid rgba(0,151,204,1);
 }
 
 .dotted {

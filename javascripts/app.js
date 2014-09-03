@@ -14,8 +14,22 @@ function loadPageContent() {
   $('a').on('click', function(e) {
     e.preventDefault();
     var id = this.id;
-    $('.container').load(id + '.html')
-  })
+    if (id === "partners") {
+      loadPageContent();
+
+      $('.fade').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        slide: '> div',
+        cssEase: 'linear'
+      });
+    } else {
+     $('.container').load(id + '.html')
+   }
+
+ })
 }
 
 
