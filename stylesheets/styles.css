@@ -214,6 +214,19 @@ body {
   display: none;
 }
 
+/* CONTACT FORM */
+.form input {
+  margin-bottom: 1em;
+}
+
+.form textarea {
+  margin-bottom: 1em;
+}
+
+.sent {
+  display: none;
+}
+
 /* FOOTER */
 .footer {
   width: 100%;
