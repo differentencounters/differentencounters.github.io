@@ -45,6 +45,7 @@ body {
 .nav_toolbar {
   float: left;
   width: 100%;
+  background-color: rgba(81,131,211,1);
 }
 
 .nav_toolbar .toolbar {
@@ -62,7 +63,7 @@ body {
   width: auto;
   text-align: center;
   padding-left: 5px;
-  border-left: 1px solid rgba(196,101,45,1);
+  border-left: 1px solid white;
 }
 
 .nav_toolbar .toolbar li:last-child {
