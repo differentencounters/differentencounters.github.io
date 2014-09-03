@@ -83,72 +83,109 @@ body {
   margin-top: .1em;
 }
 
-/*.nav_toolbar .toolbar li:last-child a {
-  color: orange;
-  }*/
+/* GENERAL BODY STYLING */
+.container {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 7em;
+  font-family: 'Roboto Condensed', sans-serif;
+}
 
-  /* GENERAL BODY STYLING */
-  .container {
-    width: 60%;
-    margin: 0 auto;
-    margin-top: 7em;
-    font-family: 'Roboto Condensed', sans-serif;
-  }
+/* HOME PAGE */
+.text {
+  width: 100%;
+  display: inline-block;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+  margin-top: 1em;
+}
 
-  .focus {
-    width: 75%;
-    background-color: lightgoldenrodyellow;
-    margin: 0 auto;
-    border: 3px solid #2EBBD8;
-    padding: 5px;
-  }
+.text p {
+  /*margin-top: 1em;*/
+  width: 100%;
+  float: left;
+  text-align: justify;
+}
 
-  /* TEAM PAGE STYLING */
-  .personnel {
-    width: 100%;
-    display: inline-block;
-    float: left;
-    margin-bottom: 15px;
-  }
+.text .intro {
+  margin: 0;
+  width: 50%;
+}
 
-  .personnel .image {
-    width: 15%;
-    float: left;
-    border: 1px solid black;
-  }
+.text .home_image {
+  width: 50%;
+  float: left;
+  /*margin-left: 2%;*/
+  text-align: center;
+}
 
-  .personnel .name {
-    margin-left: 20px;
-    width: 80%;
-    float: left;
-  }
-  .personnel .name h3 {
-    margin: 10px 0 0 0;
-    font-size: 28px;
-  }
+.text .home_image img {
+  width: 80%;
+}
 
-  .personnel .title {
-    margin-left: 20px;
-    width: 80%;
-    float: left;
-  }
+.focus {
+  /*width: 100%;*/
+  float: left;
+  background-color: rgba(81,131,211,.5);
+  margin: 0 auto;
+  border: 3px solid rgba(0,151,204,1);
+  padding: 10px 5px 10px 5px;
+}
 
-  .personnel .title h4 {
-    margin: 0;
-  }
+.focus p {
+  margin: 0;
+}
 
-  .personnel .bio {
-    text-align: justify;
-    float: left;
-    display: none;
-  }
+.focus p:first-child {
+  margin-bottom: 1em;
+}
 
-  /* FOOTER */
-  .footer {
-    width: 100%;
-    background-color: rgba(81,131,211,1);
-    font-family: 'Josefin Sans', sans-serif;
-    text-align: center;
+/* TEAM PAGE STYLING */
+.personnel {
+  width: 100%;
+  display: inline-block;
+  float: left;
+  margin-bottom: 15px;
+}
+
+.personnel .image {
+  width: 15%;
+  float: left;
+  border: 1px solid black;
+}
+
+.personnel .name {
+  margin-left: 20px;
+  width: 80%;
+  float: left;
+}
+.personnel .name h3 {
+  margin: 10px 0 0 0;
+  font-size: 28px;
+}
+
+.personnel .title {
+  margin-left: 20px;
+  width: 80%;
+  float: left;
+}
+
+.personnel .title h4 {
+  margin: 0;
+}
+
+.personnel .bio {
+  text-align: justify;
+  float: left;
+  display: none;
+}
+
+/* FOOTER */
+.footer {
+  width: 100%;
+  background-color: rgba(81,131,211,1);
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
 /*    background-color: rgba(0,151,204,1);
     background: -webkit-linear-gradient(left, rgba(0,151,204,1) , rgba(81,131,211,1));
     background: -o-linear-gradient(right, rgba(0,151,204,1), rgba(81,131,211,1));
