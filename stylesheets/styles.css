@@ -219,18 +219,13 @@ body {
   background-color: rgba(81,131,211,1);
   font-family: 'Josefin Sans', sans-serif;
   text-align: center;
-/*    background-color: rgba(0,151,204,1);
-    background: -webkit-linear-gradient(left, rgba(0,151,204,1) , rgba(81,131,211,1));
-    background: -o-linear-gradient(right, rgba(0,151,204,1), rgba(81,131,211,1));
-    background: -moz-linear-gradient(right, rgba(0,151,204,1), rgba(81,131,211,1));
-    background: linear-gradient(to right, rgba(0,151,204,1) , rgba(81,131,211,1));*/
-    color: white;
-    margin-top: 10px;
-    position: absolute;
-    left: 0;
-    clear: both;
-  }
+  color: white;
+  margin-top: 10px;
+  position: absolute;
+  left: 0;
+  clear: both;
+}
 
-  .footer h5 {
-    /*margin: 0;*/
-  }
+.footer h5 {
+  /*margin: 0;*/
+}
