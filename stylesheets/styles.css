@@ -9,19 +9,12 @@ body {
   top: 0;
   left: 0;
   background-color: white;
-/*  background-color: rgba(0,151,204,1);
-  background: -webkit-linear-gradient(left, rgba(0,151,204,1) , rgba(81,131,211,1));
-  background: -o-linear-gradient(right, rgba(0,151,204,1), rgba(81,131,211,1));
-  background: -moz-linear-gradient(right, rgba(0,151,204,1), rgba(81,131,211,1));
-  background: linear-gradient(to right, rgba(0,151,204,1) , rgba(81,131,211,1));*/
   display: inline-block;
-  /*border-bottom: 3px solid rgba(196,101,45,1);*/
 }
 
 .nav #nav_title {
   width: 60%;
   margin: 0 auto;
-  /*margin: 0 0 0 5px;*/
 }
 
 .nav #nav_title a {
@@ -34,12 +27,10 @@ body {
 #nav_quote {
   width: 60%;
   margin: 0 auto;
-  /*margin: 0 0 0 5px;*/
   color: rgba(0,151,204,1);
   font-family: 'Roboto Condensed', sans-serif;
   font-style: italic;
   font-size: 14px;
-  /*float: left;*/
 }
 
 .nav_toolbar {
@@ -50,7 +41,6 @@ body {
 }
 
 .nav_toolbar .toolbar {
-  /*float: left;*/
   width: 60%;
   height: 100%;
   margin: 0 auto;
@@ -89,6 +79,7 @@ body {
   margin: 0 auto;
   margin-top: 7em;
   font-family: 'Josefin Sans', sans-serif;
+  overflow: auto;
 }
 
 /* HOME PAGE */
@@ -101,7 +92,6 @@ body {
 }
 
 .text p {
-  /*margin-top: 1em;*/
   width: 100%;
   float: left;
   text-align: justify;
@@ -115,7 +105,6 @@ body {
 .text .home_image {
   width: 50%;
   float: left;
-  /*margin-left: 2%;*/
   text-align: center;
 }
 
@@ -124,7 +113,6 @@ body {
 }
 
 .focus {
-  /*width: 100%;*/
   float: left;
   background-color: rgba(81,131,211,.5);
   margin: 0 auto;
@@ -171,7 +159,6 @@ body {
   border: 2px dashed rgba(0,151,204,1);
   margin-bottom: 2em;
 }
-
 
 /* TEAM PAGE */
 .personnel {
@@ -223,6 +210,7 @@ body {
   margin-top: 10px;
   position: absolute;
   left: 0;
+  bottom: 0;
   clear: both;
 }
 
