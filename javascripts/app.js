@@ -15,6 +15,8 @@ function loadPageContent() {
     e.preventDefault();
     var id = this.id;
     if (id === "partners") {
+      $('.container').load(id + '.html');
+
       loadPageContent();
 
       $('.fade').slick({
