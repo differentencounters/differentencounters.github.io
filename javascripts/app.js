@@ -43,6 +43,21 @@ function imageCarousel() {
   });
 }
 
+function sendFormData() {
+  $('.form').on('submit', function(e) {
+    e.preventDefault();
+    var nameField = $('.form_name');
+    var name = nameField.val();
+    var emailField = $('.form_email');
+    var email = emailField.val();
+    var subjectField = $('.form_subject');
+    var subject = subjectField.val();
+    var messageField = $('.form_message');
+    var message = messageField.val();
+    debugger;
+  })
+}
+
 // URL FOR CONTACT FORM
 // http://forms.brace.io/andrey@differentencouters.org?name=Dmitry&_replyto=dshamis317%40gmail.com&subject=TEST&message=TEST+TEST+TEST+TEST+TEST
 
