@@ -155,6 +155,18 @@ body {
   float: left;
 }
 
+.partner_school_summary {
+  width: 100%;
+}
+
+.partner_school_carousel {
+  width: 100%;
+}
+
+.partner_school_carousel img {
+  width: 100%;
+}
+
 .dotted {
   border: 2px dashed rgba(0,151,204,1);
   margin-bottom: 2em;
