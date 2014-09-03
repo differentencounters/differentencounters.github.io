@@ -1,5 +1,5 @@
 function displayBios() {
-  $('#ray .bio').slideDown();
+  $('#ray .bio').show();
 
   $('.personnel img').on('click', function() {
     var thisBio = this.parentElement.lastElementChild
@@ -29,8 +29,9 @@ function loadPageContent() {
     var id = this.id;
     $('.container').load(id + '.html');
     setTimeout(function() {
+      console.log('image carousel loaded');
       imageCarousel();
-    }, 10)
+    }, 100)
   })
 }
 
