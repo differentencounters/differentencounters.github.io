@@ -36,3 +36,18 @@
     <div><div class="image"><img src="/images/mosaic/mosaic_4.jpg"></div></div>
   </div>
 </div>
+
+<script>
+$(function() {
+  loadPageContent();
+
+  $('.fade').slick({
+    dots: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    slide: '> div',
+    cssEase: 'linear'
+  });
+})
+</script>

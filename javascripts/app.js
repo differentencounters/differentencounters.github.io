@@ -11,29 +11,12 @@ function displayBios() {
 }
 
 function loadPageContent() {
-  $('a').on('click', function(e) {
+  $(document).on('click', 'a', function(e) {
     e.preventDefault();
     var id = this.id;
-    if (id === "partners") {
-      $('.container').load(id + '.html');
-
-      loadPageContent();
-
-      $('.fade').slick({
-        dots: true,
-        infinite: true,
-        speed: 500,
-        fade: true,
-        slide: '> div',
-        cssEase: 'linear'
-      });
-    } else {
-     $('.container').load(id + '.html')
-   }
-
- })
+    $('.container').load(id + '.html')
+  })
 }
-
 
 function pageInitializers() {
   $('html').hide();
