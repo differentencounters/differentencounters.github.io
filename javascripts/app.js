@@ -26,7 +26,7 @@ function pageInitializers() {
 }
 
 function imageCarousel() {
-  $("#owl-demo").owlCarousel({
+  $(".partner_school_carousel").owlCarousel({
       navigation : true,
       slideSpeed : 500,
       paginationSpeed : 400,
