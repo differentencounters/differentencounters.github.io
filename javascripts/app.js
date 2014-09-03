@@ -11,7 +11,14 @@ function displayBios() {
 }
 
 function loadPageContent() {
-  $(document).on('click', 'a', function(e) {
+  $('.toolbar li a').on('click', function(e) {
+  // $(document).on('click', 'a', function(e) {
+    e.preventDefault();
+    var id = this.id;
+    $('.container').load(id + '.html')
+  })
+
+  $(document).on('click', '#mosaic', function(e) {
     e.preventDefault();
     var id = this.id;
     $('.container').load(id + '.html')
@@ -27,10 +34,10 @@ function pageInitializers() {
 
 function imageCarousel() {
   $(".partner_school_carousel").owlCarousel({
-      navigation : true,
-      slideSpeed : 500,
-      paginationSpeed : 400,
-      singleItem:true
+    navigation : true,
+    slideSpeed : 500,
+    paginationSpeed : 400,
+    singleItem:true
   });
 }
 
