@@ -11,7 +11,7 @@ function displayBios() {
 }
 
 function loadPageContent() {
-  $('.toolbar li a').on('click', function(e) {
+  $('a').on('click', function(e) {
     e.preventDefault();
     var id = this.id;
     $('.container').load(id + '.html')
