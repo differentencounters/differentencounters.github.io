@@ -80,6 +80,7 @@ body {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 18px;
   text-decoration: none;
+  margin-top: .1em;
 }
 
 /*.nav_toolbar .toolbar li:last-child a {
