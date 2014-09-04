@@ -29,15 +29,6 @@ body {
   text-decoration: none;
 }
 
-#nav_quote {
-  width: 60%;
-  margin: 0 auto;
-  color: rgba(0,151,204,1);
-  font-family: 'Roboto Condensed', sans-serif;
-  font-style: italic;
-  font-size: 14px;
-}
-
 .nav_toolbar {
   float: left;
   width: 100%;
@@ -248,6 +239,15 @@ body {
   position: absolute;
   left: 0;
   clear: both;
+}
+
+#footer_quote {
+  width: 60%;
+  margin: 0 auto;
+  color: rgba(0,151,204,1);
+  font-family: 'Roboto Condensed', sans-serif;
+  font-style: italic;
+  font-size: 14px;
 }
 
 .footer h5 {
