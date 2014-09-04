@@ -104,17 +104,22 @@ body {
 
 .text .intro {
   margin: 0;
-  width: 50%;
+  width: 55%;
 }
 
 .text .home_image {
-  width: 50%;
+  width: 40%;
   float: left;
-  text-align: center;
+  text-align: right;
+  margin-left: 5%;
 }
 
 .text .home_image img {
   width: 80%;
+}
+
+.text p:nth-child(2) {
+  margin: 0 0 1em 0;
 }
 
 .focus {

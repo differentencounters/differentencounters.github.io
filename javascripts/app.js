@@ -18,10 +18,10 @@ function loadPageContent() {
       $('.container').load(id + '.html')
       setTimeout(function() {
         sendFormData();
-        console.log('send form data')
+        console.log('send form data');
       }, 100)
     }
-    $('.container').load(id + '.html')
+    $('.container').load(id + '.html');
   })
 
   $(document).on('click', '#mosaic', function(e) {
@@ -73,8 +73,12 @@ function sendFormData() {
   })
 }
 
-// URL FOR CONTACT FORM
-// http://forms.brace.io/andrey@differentencouters.org?name=Dmitry&_replyto=dshamis317%40gmail.com&subject=TEST&message=TEST+TEST+TEST+TEST+TEST
+function stickyFooter() {
+  var bodyHeight = $('.container').height();
+  var windowHeight = $(window).height();
+  if (windowHeight > bodyHeight) {
+    $('.footer').css('position','absolute').css('bottom',0);
+}
 
 $(function() {
   pageInitializers()
