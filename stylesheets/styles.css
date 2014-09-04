@@ -111,17 +111,17 @@ body {
 }
 
 .text .home_image {
-  width: 40%;
+  width: 35%;
   float: left;
   text-align: right;
   margin-left: 5%;
 }
 
 .text .home_image img {
-  width: 80%;
+  width: 90%;
 }
 
-.text p:nth-child(2) {
+.text .subintro {
   margin: 0 0 1em 0;
 }
 
