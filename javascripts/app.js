@@ -90,8 +90,9 @@ function stickyFooter() {
   if (windowHeight > bodyHeight) {
     $('.footer').css('position','absolute').css('bottom',0);
   }
+}
 
-  $(function() {
-    pageInitializers()
-    loadPageContent();
-  })
+$(function() {
+  pageInitializers()
+  loadPageContent();
+})
