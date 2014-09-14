@@ -1,8 +1,9 @@
 function displayBios() {
   $('#ray .bio').show();
 
-  $('.personnel img').on('click', function() {
-    var thisBio = this.parentElement.lastElementChild
+  $('.personnel .name .name_link').on('click', function(e) {
+    e.preventDefault();
+    var thisBio = this.parentElement.parentElement.parentElement.lastElementChild
     $('.bio').slideUp();
     if ($(thisBio).is(':hidden')) {
      $(thisBio).slideDown();
@@ -73,8 +74,10 @@ function sendFormData() {
     var messageField = $('.form_message');
     var message = messageField.val().replace(' ', '+');
     $.ajax({
-      url: 'http://forms.brace.io/andrey@differentencouters.org?name=' + name + '&_replyto=' + email + '&subject=' + subject + '&message=' + message,
+      url: '//forms.brace.io/andrey@differentencouters.org',
       method: 'post',
+      data: {name: name, _replyto: email, _subject: subject, message: message},
+      dataType: 'json',
       success: function(data) {
         console.log('Form submitted')
         $('.form').hide();
