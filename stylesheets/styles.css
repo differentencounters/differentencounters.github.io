@@ -97,7 +97,6 @@ body {
   width: 100%;
   display: inline-block;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 18px;
   margin-top: 1em;
 }
 
@@ -213,6 +212,14 @@ body {
   font-size: 28px;
 }
 
+.personnel .name .name_link {
+  color: rgba(0,151,204,1);
+}
+
+.personnel .name .name_link:hover {
+  color: rgba(196,101,45,1);
+}
+
 .personnel .title {
   margin-left: 20px;
   width: 80%;
@@ -262,9 +269,96 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
   font-style: italic;
   font-size: 14px;
-  margin-bottom: 1em;
+  margin-bottom: .35em;
 }
 
 .footer h5 {
   margin: 0;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 1135px) {
+  .text {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1134px) {
+
+  /* NAVIGATION BAR */
+
+  .nav #nav_title a {
+    font-size: 1.4em;
+  }
+
+  .nav #nav_quote p {
+    font-size: 16px;
+  }
+
+  .nav_toolbar {
+    height: 1.5em;
+  }
+
+  .nav_toolbar .toolbar li a {
+    font-size: 14px;
+  }
+
+  /* GENERAL BODY STYLING */
+  .container {
+    min-height: 475px;
+    margin-top: 5em;
+  }
+
+  /* FOOTER */
+  #footer_quote {
+    font-size: 12px;
+  }
+
+  /* PARTNERS PAGE */
+  .partner_school {
+    margin-bottom: .2em;
+  }
+
+  .partner_school_image {
+    width: 40%;
+    float: left;
+  }
+
+  .partner_school_image img {
+    width: 100%;
+  }
+
+  .partner_school_text {
+    width: 45%;
+    float: left;
+    margin-left: 5%;
+  }
+
+  .partner_school_text h3 {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .partner_school_text p {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .partner_school_summary {
+    width: 100%;
+  }
+
+  .partner_school_carousel {
+    width: 100%;
+    text-align: center;
+  }
+
+  .partner_school_carousel img {
+    width: 80%;
+    border: 2px solid rgba(0,151,204,1);
+  }
+
+  .dotted {
+    margin-bottom: .2em;
+  }
 }
