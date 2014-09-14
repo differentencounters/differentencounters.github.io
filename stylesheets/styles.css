@@ -245,6 +245,20 @@ body {
   margin-bottom: 1em;
 }
 
+.form input:last-child {
+  background-color: rgba(196,101,45,1);
+  color: white;
+  border: none;
+  width: 123px;
+  padding: .5em;
+  border-radius: .5em;
+}
+
+.form input:last-child:hover {
+  background-color: rgba(0,151,204,1);
+  cursor: pointer;
+}
+
 .sent {
   display: none;
 }
