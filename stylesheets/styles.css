@@ -307,6 +307,14 @@ body {
   margin: 0;
 }
 
+.footer h5 a {
+  color: white;
+}
+
+.footer h5 a:hover {
+  color: rgba(196,101,45,1);
+}
+
 /* MEDIA QUERIES */
 @media screen and (min-width: 1135px) {
   .text {
