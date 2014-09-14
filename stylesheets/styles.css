@@ -264,6 +264,7 @@ body {
 
 .form input:last-child:hover {
   background-color: rgba(0,151,204,1);
+  text-decoration: underline;
   cursor: pointer;
 }
 
