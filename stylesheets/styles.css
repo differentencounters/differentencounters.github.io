@@ -260,12 +260,17 @@ body {
   width: 123px;
   padding: .5em;
   border-radius: .5em;
+  cursor: pointer;
 }
 
 .form input:last-child:hover {
   background-color: rgba(0,151,204,1);
   text-decoration: underline;
-  cursor: pointer;
+}
+
+.form input:last-child:click {
+  background-color: rgba(81,131,211,1);
+  text-decoration: underline;
 }
 
 .sent {
