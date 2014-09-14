@@ -271,6 +271,15 @@ body {
   display: none;
 }
 
+/* DONATE PAGE */
+#contact_us {
+  color: rgba(0,151,204,1);
+}
+
+#contact_us:hover {
+  color: rgba(196,101,45,1);
+}
+
 /* FOOTER */
 .footer {
   width: 100%;
