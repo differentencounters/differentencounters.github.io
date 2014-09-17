@@ -1,13 +1,10 @@
 body {
+  margin: 0;
   max-width: 100%;
 }
 
 /* NAVIGATION BAR */
 .nav {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
   background-color: white;
   display: inline-block;
 }
@@ -294,8 +291,6 @@ body {
   text-align: center;
   color: white;
   margin-top: 10px;
-  position: absolute;
-  left: 0;
   clear: both;
 }
 
