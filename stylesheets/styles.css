@@ -339,12 +339,6 @@ footer h5 a:hover {
     font-size: 14px;
   }
 
-  /* GENERAL BODY STYLING */
-  .container {
-    min-height: 475px;
-    margin-top: 5em;
-  }
-
   /* FOOTER */
   #footer_quote {
     font-size: 12px;
