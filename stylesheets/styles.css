@@ -320,14 +320,12 @@ footer h5 a:hover {
 }
 
 @media screen and (max-width: 1134px) {
-
   /* NAVIGATION BAR */
-
-  .nav #nav_title a {
+  nav #nav_title a {
     font-size: 1.4em;
   }
 
-  .nav #nav_quote p {
+  nav #nav_quote p {
     font-size: 16px;
   }
 
@@ -340,7 +338,7 @@ footer h5 a:hover {
   }
 
   /* FOOTER */
-  #footer_quote {
+  footer #footer_quote {
     font-size: 12px;
   }
 
@@ -393,3 +391,49 @@ footer h5 a:hover {
   }
 }
 
+@media screen and (max-width: 814px) {
+  /* NAVIGATION BAR */
+  nav #nav_title a {
+    font-size: 1.2em;
+  }
+
+  nav #nav_quote p {
+    font-size: 14px;
+  }
+
+  .nav_toolbar {
+    height: 1.2em;
+  }
+
+  .nav_toolbar .toolbar li a {
+    font-size: 12px;
+  }
+
+  /* FOOTER */
+  footer #footer_quote {
+    font-size: 11px;
+  }
+
+  footer h5 {
+    font-size: 11px;
+  }
+
+  /* LANDING PAGE */
+  .intro {
+    width: 100%;
+    display: block;
+    margin-bottom: 1em;
+  }
+
+  .home_image {
+    width: 60%;
+    margin: 0;
+    margin: 0 auto;
+
+  }
+
+  /* TEAM PAGE */
+  .personnel .name, .personnel .title {
+    margin-left: 10px
+  }
+}
