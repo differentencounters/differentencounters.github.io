@@ -419,17 +419,16 @@ footer h5 a:hover {
   }
 
   /* LANDING PAGE */
-  .intro {
+  .text .intro {
     width: 100%;
     display: block;
     margin-bottom: 1em;
   }
 
-  .home_image {
+  .text .home_image {
     width: 60%;
     margin: 0;
     margin: 0 auto;
-
   }
 
   /* TEAM PAGE */
