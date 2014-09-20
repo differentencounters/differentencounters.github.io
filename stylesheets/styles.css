@@ -1,6 +1,9 @@
 body {
   margin: 0;
   max-width: 100%;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 /* NAVIGATION BAR */
@@ -78,10 +81,10 @@ nav #nav_quote p {
 
 /* GENERAL BODY STYLING */
 .container {
-  min-height: 450px;
+  /*min-height: 450px;*/
+  flex: 1;
   width: 60%;
   margin: 0 auto;
-  margin-top: 7em;
   font-family: 'Josefin Sans', sans-serif;
   overflow: auto;
 }
@@ -277,7 +280,7 @@ nav #nav_quote p {
 }
 
 /* FOOTER */
-.footer {
+footer {
   width: 100%;
   background-color: rgba(81,131,211,1);
   font-family: 'Josefin Sans', sans-serif;
@@ -287,7 +290,7 @@ nav #nav_quote p {
   clear: both;
 }
 
-#footer_quote {
+footer #footer_quote {
   width: 60%;
   margin: 0 auto;
   color: white;
@@ -297,15 +300,15 @@ nav #nav_quote p {
   margin-bottom: .35em;
 }
 
-.footer h5 {
+footer h5 {
   margin: 0;
 }
 
-.footer h5 a {
+footer h5 a {
   color: white;
 }
 
-.footer h5 a:hover {
+footer h5 a:hover {
   color: rgba(196,101,45,1);
 }
 
