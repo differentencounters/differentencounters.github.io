@@ -426,9 +426,8 @@ footer h5 a:hover {
   }
 
   .text .home_image {
-    width: 60%;
-    margin: 0;
-    margin: 0 auto;
+    width: 100%;
+    margin-left: 0;
   }
 
   /* TEAM PAGE */
