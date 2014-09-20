@@ -435,3 +435,19 @@ footer h5 a:hover {
     margin-left: 10px
   }
 }
+
+@media screen and (max-width: 600px) {
+  /* NAVIGATION BAR */
+  nav #nav_title, nav #nav_quote {
+    width: 90%;
+  }
+
+  .nav_toolbar .toolbar {
+    width 100%;
+  }
+
+  /* GENERAL STYLING */
+  .container {
+    width: 90%;
+  }
+}
