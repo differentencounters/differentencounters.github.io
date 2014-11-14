@@ -280,6 +280,10 @@ nav #nav_quote p {
   color: rgba(196,101,45,1);
 }
 
+.donate-form {
+  text-align: center;
+}
+
 /* FOOTER */
 footer {
   width: 100%;
