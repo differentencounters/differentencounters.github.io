@@ -74,7 +74,7 @@ function sendFormData() {
     var messageField = $('.form_message');
     var message = messageField.val().replace(' ', '+');
     $.ajax({
-      url: '//forms.brace.io/andrey@differentencouters.org',
+      url: '//formspree.io/andrey@differentencouters.org',
       method: 'post',
       data: {name: name, _replyto: email, _subject: subject, message: message},
       dataType: 'json',
