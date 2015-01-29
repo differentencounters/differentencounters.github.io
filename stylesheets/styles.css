@@ -94,6 +94,14 @@ nav #nav_quote p {
   color: rgba(196,101,45,1);
 }
 
+.notification {
+  width: 60%;
+  text-align: center;
+  margin-top: 1em;
+  font-family: 'Josefin Sans', sans-serif;
+  box-sizing: border-box;
+}
+
 /* HOME PAGE */
 .text {
   width: 100%;
@@ -453,6 +461,10 @@ footer h5 a:hover {
   }
 
   /* GENERAL STYLING */
+  .notification {
+    width: 90%;
+  }
+
   .container {
     width: 90%;
   }
