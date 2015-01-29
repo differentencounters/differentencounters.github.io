@@ -94,7 +94,7 @@ nav #nav_quote p {
   color: rgba(196,101,45,1);
 }
 
-.notification {
+div.notification {
   width: 60%;
   text-align: center;
   margin-top: 1em;
