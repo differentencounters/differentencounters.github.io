@@ -461,7 +461,7 @@ footer h5 a:hover {
   }
 
   /* GENERAL STYLING */
-  .notification {
+  div.notification {
     width: 90%;
   }
 
