@@ -103,6 +103,13 @@ div.notification {
 }
 
 /* HOME PAGE */
+.video {
+  width: 60%;
+  margin-top: 1em;
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+}
+
 .text {
   width: 100%;
   display: inline-block;
@@ -448,6 +455,11 @@ footer h5 a:hover {
   .personnel .name, .personnel .title {
     margin-left: 10px
   }
+
+  /* GENERAL STYLING */
+  .container, .video {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -465,7 +477,7 @@ footer h5 a:hover {
     width: 90%;
   }
 
-  .container {
+  .container, .video {
     width: 90%;
   }
 }
