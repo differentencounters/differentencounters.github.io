@@ -104,10 +104,15 @@ div.notification {
 
 /* HOME PAGE */
 .video {
-  width: 60%;
-  margin-top: 1em;
+  width: 100%;
+  margin-top: 1em !important;
   font-family: 'Josefin Sans', sans-serif;
   text-align: center;
+  box-sizing: border-box;
+}
+
+.video img {
+  width: 100%;
 }
 
 .text {
@@ -457,7 +462,7 @@ footer h5 a:hover {
   }
 
   /* GENERAL STYLING */
-  .container, .video {
+  .container {
     width: 90%;
   }
 }
@@ -477,7 +482,7 @@ footer h5 a:hover {
     width: 90%;
   }
 
-  .container, .video {
+  .container {
     width: 90%;
   }
 }
