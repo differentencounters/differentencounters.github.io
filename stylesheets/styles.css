@@ -112,7 +112,7 @@ div.notification {
 }
 
 .video img {
-  width: 100%;
+  width: 50%;
 }
 
 .text {
@@ -484,5 +484,9 @@ footer h5 a:hover {
 
   .container {
     width: 90%;
+  }
+
+  .video img {
+    width: 80%;
   }
 }
