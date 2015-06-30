@@ -33,13 +33,14 @@ h2, h4, h5, h6
 p, a, li
 	font-size: 18px
 
+.main-col
+	width: 60%
+	margin: 0 auto
+
 nav
-	padding: 10px 0
+	padding-top: 10px
 
 	#nav_title
-		width: 60%
-		margin: 0 auto
-
 		a 
 			font-size: 1.7em
 			color: $blue
@@ -47,8 +48,6 @@ nav
 
 
 	#nav_quote
-		width: 60%
-		margin: 0 auto
 		padding-bottom: 5px
 
 		p
@@ -58,12 +57,10 @@ nav
 	.nav_toolbar
 		height: 2em
 		background-color: $darkBlue
-		margin: 5px 0 10px 0
+		margin-top: 5px
 
 		.toolbar
-			width: 60%
 			height: 100%
-			margin: 0 auto
 			list-style-type: none
 			display: table
 			table-layout: fixed
@@ -88,3 +85,13 @@ nav
 
 					&:hover
 						text-decoration: underline
+
+footer
+	padding: 10px
+	text-align: center
+	background-color: $blue
+	color: $white
+	margin-top: 20px
+
+	#footer_quote
+		margin-bottom: 8px

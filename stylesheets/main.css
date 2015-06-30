@@ -298,47 +298,44 @@ p, a, li {
 }
 
 /* line 36, ../sass/main.sass */
-nav {
-  padding: 10px 0;
-}
-/* line 39, ../sass/main.sass */
-nav #nav_title {
+.main-col {
   width: 60%;
   margin: 0 auto;
 }
-/* line 43, ../sass/main.sass */
+
+/* line 40, ../sass/main.sass */
+nav {
+  padding-top: 10px;
+}
+/* line 44, ../sass/main.sass */
 nav #nav_title a {
   font-size: 1.7em;
   color: #0097cc;
   text-decoration: none;
 }
-/* line 49, ../sass/main.sass */
+/* line 50, ../sass/main.sass */
 nav #nav_quote {
-  width: 60%;
-  margin: 0 auto;
   padding-bottom: 5px;
 }
-/* line 54, ../sass/main.sass */
+/* line 53, ../sass/main.sass */
 nav #nav_quote p {
   color: #0097cc;
   padding-left: 3px;
 }
-/* line 58, ../sass/main.sass */
+/* line 57, ../sass/main.sass */
 nav .nav_toolbar {
   height: 2em;
   background-color: #5183d3;
-  margin: 5px 0 10px 0;
+  margin-top: 5px;
 }
-/* line 63, ../sass/main.sass */
+/* line 62, ../sass/main.sass */
 nav .nav_toolbar .toolbar {
-  width: 60%;
   height: 100%;
-  margin: 0 auto;
   list-style-type: none;
   display: table;
   table-layout: fixed;
 }
-/* line 71, ../sass/main.sass */
+/* line 68, ../sass/main.sass */
 nav .nav_toolbar .toolbar li {
   display: table-cell;
   width: auto;
@@ -347,19 +344,32 @@ nav .nav_toolbar .toolbar li {
   border-left: 1px solid #fff;
   vertical-align: middle;
 }
-/* line 79, ../sass/main.sass */
+/* line 76, ../sass/main.sass */
 nav .nav_toolbar .toolbar li:last-child {
   background-color: #c4652d;
   border-right: 1px solid #fff;
 }
-/* line 83, ../sass/main.sass */
+/* line 80, ../sass/main.sass */
 nav .nav_toolbar .toolbar li a {
   display: inline-block;
   width: 100%;
   color: #fff;
   text-decoration: none;
 }
-/* line 89, ../sass/main.sass */
+/* line 86, ../sass/main.sass */
 nav .nav_toolbar .toolbar li a:hover {
   text-decoration: underline;
+}
+
+/* line 89, ../sass/main.sass */
+footer {
+  padding: 10px;
+  text-align: center;
+  background-color: #0097cc;
+  color: #fff;
+  margin-top: 20px;
+}
+/* line 96, ../sass/main.sass */
+footer #footer_quote {
+  margin-bottom: 8px;
 }
