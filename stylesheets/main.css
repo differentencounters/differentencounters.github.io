@@ -298,44 +298,60 @@ p, a, li {
 }
 
 /* line 36, ../sass/main.sass */
+h2 {
+  font-size: 1.85em;
+}
+
+/* line 39, ../sass/main.sass */
 .main-col {
   width: 60%;
+  max-width: 1080px;
   margin: 0 auto;
 }
 
-/* line 40, ../sass/main.sass */
+/* line 44, ../sass/main.sass */
+.orange {
+  color: #c4652d;
+}
+
+/* line 47, ../sass/main.sass */
+.underline {
+  text-decoration: underline;
+}
+
+/* line 50, ../sass/main.sass */
 nav {
   padding-top: 10px;
 }
-/* line 44, ../sass/main.sass */
+/* line 54, ../sass/main.sass */
 nav #nav_title a {
   font-size: 1.7em;
   color: #0097cc;
   text-decoration: none;
 }
-/* line 50, ../sass/main.sass */
+/* line 60, ../sass/main.sass */
 nav #nav_quote {
   padding-bottom: 5px;
 }
-/* line 53, ../sass/main.sass */
+/* line 63, ../sass/main.sass */
 nav #nav_quote p {
   color: #0097cc;
   padding-left: 3px;
 }
-/* line 57, ../sass/main.sass */
+/* line 67, ../sass/main.sass */
 nav .nav_toolbar {
   height: 2em;
   background-color: #5183d3;
   margin-top: 5px;
 }
-/* line 62, ../sass/main.sass */
+/* line 72, ../sass/main.sass */
 nav .nav_toolbar .toolbar {
   height: 100%;
   list-style-type: none;
   display: table;
   table-layout: fixed;
 }
-/* line 68, ../sass/main.sass */
+/* line 78, ../sass/main.sass */
 nav .nav_toolbar .toolbar li {
   display: table-cell;
   width: auto;
@@ -344,24 +360,24 @@ nav .nav_toolbar .toolbar li {
   border-left: 1px solid #fff;
   vertical-align: middle;
 }
-/* line 76, ../sass/main.sass */
+/* line 86, ../sass/main.sass */
 nav .nav_toolbar .toolbar li:last-child {
   background-color: #c4652d;
   border-right: 1px solid #fff;
 }
-/* line 80, ../sass/main.sass */
+/* line 90, ../sass/main.sass */
 nav .nav_toolbar .toolbar li a {
   display: inline-block;
   width: 100%;
   color: #fff;
   text-decoration: none;
 }
-/* line 86, ../sass/main.sass */
+/* line 96, ../sass/main.sass */
 nav .nav_toolbar .toolbar li a:hover {
   text-decoration: underline;
 }
 
-/* line 89, ../sass/main.sass */
+/* line 99, ../sass/main.sass */
 footer {
   padding: 10px;
   text-align: center;
@@ -369,7 +385,37 @@ footer {
   color: #fff;
   margin-top: 20px;
 }
-/* line 96, ../sass/main.sass */
+/* line 106, ../sass/main.sass */
 footer #footer_quote {
   margin-bottom: 8px;
+}
+
+/* line 109, ../sass/main.sass */
+.video {
+  margin: 10px auto;
+}
+/* line 112, ../sass/main.sass */
+.video img {
+  max-width: 100%;
+}
+
+/* line 115, ../sass/main.sass */
+.section-header {
+  display: table;
+  width: 100%;
+  height: 75px;
+  background-color: #5183d3;
+}
+/* line 121, ../sass/main.sass */
+.section-header h2 {
+  color: #fff;
+  display: table-cell;
+  height: 100%;
+  vertical-align: bottom;
+  padding-left: 20%;
+}
+
+/* line 128, ../sass/main.sass */
+.section-contents {
+  padding: 15px 0;
 }
