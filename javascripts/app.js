@@ -53,15 +53,6 @@ function pageInitializers() {
   $('html').fadeIn();
 }
 
-function imageCarousel() {
-  $(".partner_school_carousel").owlCarousel({
-    navigation : true,
-    slideSpeed : 500,
-    paginationSpeed : 400,
-    singleItem:true
-  });
-}
-
 function sendFormData() {
   $('.form').on('submit', function(e) {
     e.preventDefault();
