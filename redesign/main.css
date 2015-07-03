@@ -439,11 +439,11 @@ footer #footer_quote {
 }
 /* line 150, main.sass */
 .section-wrapper#partners .section-header {
-  background-image: url("../../images/mosaic/mosaic_1a.jpg");
+  background-image: url("../images/mosaic/mosaic_1a.jpg");
 }
 /* line 154, main.sass */
 .section-wrapper#team .section-header {
-  background-image: url("../../images/mosaic/mosaic_1b.jpg");
+  background-image: url("../images/mosaic/mosaic_1b.jpg");
 }
 /* line 158, main.sass */
 .section-wrapper#donate .section-header {
