@@ -12,39 +12,39 @@ function displayBios() {
 }
 
 function loadPageContent() {
-  // Loads pages from the nav bar
-  $('.toolbar li a').on('click', function(e) {
-    e.preventDefault();
-    var id = this.id;
-    if (id === "contact") {
-      $('.container').load(id + '.html')
-      setTimeout(function() {
-        sendFormData();
-        console.log('send form data');
-      }, 100)
-    }
-    $('.container').load(id + '.html');
-  })
+  $('a[href^="#"]').click(function(e) {
+      e.preventDefault();
 
-  // Loads Mosaic Partners page
-  $(document).on('click', '#mosaic', function(e) {
-    e.preventDefault();
-    $('.container').load('mosaic.html');
-    setTimeout(function() {
-      console.log('image carousel loaded');
-      imageCarousel();
-    }, 100)
-  })
+      var target = this.hash;
+      console.log(target)
 
-  // Loads contact form from Donations page
-  $(document).on('click', '#contact_us', function(e) {
-    e.preventDefault();
-    $('.container').load('contact.html');
-    setTimeout(function() {
-      sendFormData();
-      console.log('send form data');
-    }, 100)
-  })
+      $('html, body').stop().animate({
+        'scrollTop': $(target).offset().top
+      }, 500, 'swing', function () {
+        window.location.hash = target;
+      });
+
+    });
+
+  // // Loads Mosaic Partners page
+  // $(document).on('click', '#mosaic', function(e) {
+  //   e.preventDefault();
+  //   $('.container').load('mosaic.html');
+  //   setTimeout(function() {
+  //     console.log('image carousel loaded');
+  //     imageCarousel();
+  //   }, 100)
+  // })
+
+  // // Loads contact form from Donations page
+  // $(document).on('click', '#contact_us', function(e) {
+  //   e.preventDefault();
+  //   $('.container').load('contact.html');
+  //   setTimeout(function() {
+  //     sendFormData();
+  //     console.log('send form data');
+  //   }, 100)
+  // })
 }
 
 function pageInitializers() {
@@ -87,6 +87,6 @@ function stickyFooter() {
 }
 
 $(function() {
-  pageInitializers()
+  // pageInitializers()
   loadPageContent();
 })

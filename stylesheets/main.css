@@ -403,23 +403,59 @@ footer #footer_quote {
   max-width: 100%;
 }
 
-/* line 118, ../sass/main.sass */
-.section-header {
+/* line 119, ../sass/main.sass */
+.section-wrapper .section-header {
   display: table;
   width: 100%;
-  height: 75px;
+  height: 175px;
   background-color: #5183d3;
+  background-image: url("../images/mosaic/mosaic_home.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  z-index: -1;
 }
-/* line 124, ../sass/main.sass */
-.section-header h2 {
+/* line 131, ../sass/main.sass */
+.section-wrapper .section-header:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #5183d3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.65;
+  z-index: -1;
+}
+/* line 143, ../sass/main.sass */
+.section-wrapper .section-header h2 {
   color: #fff;
   display: table-cell;
   height: 100%;
   vertical-align: bottom;
   padding-bottom: 5px;
 }
+/* line 151, ../sass/main.sass */
+.section-wrapper#partners .section-header {
+  background-image: url("../images/mosaic/mosaic_1a.jpg");
+}
+/* line 155, ../sass/main.sass */
+.section-wrapper#team .section-header {
+  background-image: url("../images/mosaic/mosaic_1b.jpg");
+}
+/* line 159, ../sass/main.sass */
+.section-wrapper#donate .section-header {
+  background-image: none;
+  height: 75px;
+}
+/* line 163, ../sass/main.sass */
+.section-wrapper#donate .section-header:after {
+  display: none;
+}
 
-/* line 131, ../sass/main.sass */
+/* line 166, ../sass/main.sass */
 .section-contents {
   padding: 15px 0;
 }

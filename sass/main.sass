@@ -115,18 +115,53 @@ footer
 	img
 		max-width: 100%
 
-.section-header
-	display: table
-	width: 100%
-	height: 75px
-	background-color: $darkBlue
+.section-wrapper
+	.section-header
+		display: table
+		width: 100%
+		height: 175px
+		background-color: $darkBlue
+		background-image: url('../images/mosaic/mosaic_home.jpg')
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center
+		position: relative
+		z-index: -1
 
-	h2
-		color: $white
-		display: table-cell
-		height: 100%
-		vertical-align: bottom
-		padding-bottom: 5px
+		&:after
+			content: ''
+			display: block
+			width: 100%
+			height: 100%
+			background-color: $darkBlue
+			position: absolute
+			top: 0
+			left: 0
+			opacity: .65
+			z-index: -1
+
+		h2
+			color: $white
+			display: table-cell
+			height: 100%
+			vertical-align: bottom
+			padding-bottom: 5px
+
+	&#partners
+		.section-header
+			background-image: url('../images/mosaic/mosaic_1a.jpg')
+
+	&#team
+		.section-header
+			background-image: url('../images/mosaic/mosaic_1b.jpg')
+
+	&#donate
+		.section-header
+			background-image: none
+			height: 75px
+
+			&:after
+				display: none
 
 .section-contents
 	padding: 15px 0
