@@ -2,17 +2,8 @@
 @import breakpoint
 @import normalize
 @import breakpoints
-
-// COLORS
-$blue: #0097cc
-$darkBlue: #5183d3
-$orange: #c4652d
-$white: #fff
-$black: #000
-
-// FONTS
-$josefinSans: 'Josefin Sans', sans-serif
-$josefinSlab: 'Josefin Slab', serif
+@import colors
+@import typography
 
 *
 	margin: 0
@@ -23,18 +14,6 @@ body
 	width: 100%
 	max-width: 100%
 	background: $white
-
-h1, h3, li, a, p
-	font-family: $josefinSans
-
-h2, h4, h5, h6
-	font-family: $josefinSlab
-
-p, a, li
-	font-size: 18px
-
-h2
-	font-size: 1.85em
 
 .main-col
 	width: 60%
@@ -66,6 +45,8 @@ nav
 		p
 			color: $blue
 			padding-left: 3px
+			margin: 0
+			line-height: 1
 
 	.nav_toolbar
 		height: 2em
@@ -98,6 +79,16 @@ nav
 
 					&:hover
 						text-decoration: underline
+
+.team
+	.personnel
+		display: inline-block
+		width: 33%
+
+		.image
+			height: 200px
+			max-width: 200px
+			border: 3px solid transparent
 
 footer
 	padding: 10px
@@ -155,13 +146,9 @@ footer
 		.section-header
 			background-image: url('../images/mosaic/mosaic_1b.jpg')
 
-	&#donate
+	&#contact
 		.section-header
-			background-image: none
-			height: 75px
-
-			&:after
-				display: none
+			background-image: url('../images/mosaic/mosaic_12.jpg')
 
 .section-contents
 	padding: 15px 0
