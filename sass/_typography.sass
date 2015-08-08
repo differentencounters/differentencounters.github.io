@@ -5,7 +5,7 @@ $josefinSans: 'Josefin Sans', sans-serif
 $josefinSlab: 'Josefin Slab', serif
 
 // TEXT
-h1, h3, li, a, p
+h1, h3, li, a, p, label, input, textarea
 	font-family: $josefinSans
 
 h2, h4, h5, h6
@@ -21,9 +21,16 @@ p
 a
 	color: $orange
 
+	&:hover
+		color: $blue
+
 li
 	margin-left: 15px
 
 h2
 	font-size: 1.85em
 	margin: 15px 0
+
+input, textarea
+	font-size: 18px
+	padding: 5px 3px

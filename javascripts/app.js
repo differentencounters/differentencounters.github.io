@@ -2,6 +2,11 @@ var differentEncounters = {
 	init: function() {
 		this.navSlideTransition();
 		this.renderDescriptions();
+		this.sendFormData();
+		this.renderMobileNav();
+	},
+	isMobile: function() {
+		return $(window).width() <= 800;
 	},
 	navSlideTransition: function() {
 		$('nav a[href^="#"]').click(function(e) {
@@ -14,6 +19,10 @@ var differentEncounters = {
 			}, 500, 'swing', function () {
 				window.location.hash = target;
 			});
+
+			if (differentEncounters.isMobile()) {
+				differentEncounters.toggleActiveClasses();
+			}
 
 		});
 	},
@@ -44,10 +53,14 @@ var differentEncounters = {
 	renderDescriptions: function() {
 		$('.reveal-link').click(function(e) {
 			e.preventDefault();
+
 			var divToShow = $(this).closest('.reveal-container').data('id');
+			if (differentEncounters.isMobile()) {
+				divToShow = $(this).closest('.reveal-container').data('mobile');
+			}
 			var $this = $('#'+divToShow);
 			var divClass = $($this).attr('class');
-			
+
 			$('.'+divClass).not($this).each(function(){
 				$(this).slideUp();
 			});
@@ -58,21 +71,20 @@ var differentEncounters = {
 				$($this).slideDown();
 			}
 		});
-	}
-}
-
-
-function displayBios() {
-	$('#ray .bio').show();
-
-	$('.personnel .name .name_link').on('click', function(e) {
-		e.preventDefault();
-		var thisBio = this.parentElement.parentElement.parentElement.lastElementChild
-		$('.bio').slideUp();
-		if ($(thisBio).is(':hidden')) {
-			$(thisBio).slideDown();
+	},
+	renderMobileNav: function() {
+		if (this.isMobile) {
+			$('.mobile-button').click(function() {
+				differentEncounters.toggleActiveClasses();
+			});
 		}
-	})
+	},
+	toggleActiveClasses: function() {
+		$('.mobile-button').find('span').toggleClass('active');
+		$('.nav_toolbar').toggleClass('active');
+		$('.toolbar').toggleClass('active');
+		$('.toolbar li').toggleClass('active');
+	}
 }
 
 $(function() {
