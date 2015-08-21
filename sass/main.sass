@@ -1,0 +1,344 @@
+@import compass
+@import breakpoint
+@import normalize
+@import breakpoints
+@import colors
+@import typography
+@import burger
+
+
+// GLOBAL STYLES
+*
+	margin: 0
+	padding: 0
+	@include box-sizing(border-box)
+
+body
+	width: 100%
+	max-width: 100%
+	background: url(http://subtlepatterns.com/patterns/greyzz.png)
+
+.main-col
+	width: 60%
+	max-width: 1080px
+	margin: 0 auto
+
+	&.main-col-padded
+		padding-left: 20%
+
+.orange
+	color: $orange
+
+.underline
+	text-decoration: underline
+
+img
+	width: 100%
+	border: 5px solid $blue
+
+	&:hover
+		border-color: $darkBlue
+
+button
+	width: 100%
+	max-width: 300px
+	border: 0
+	padding: 20px
+	background-color: $darkBlue
+	color: $white
+	text-transform: uppercase
+	border-radius: 7px
+
+	&:hover
+		background-color: $blue
+
+ul
+	list-style-position: inside
+
+// SPECIFIC STYLES
+nav
+	#nav_title
+		a 
+			font-size: 1.7em
+			color: $blue
+			text-decoration: none
+
+
+	#nav_quote
+		padding-bottom: 5px
+
+		p
+			color: $blue
+			padding-left: 3px
+			margin: 0
+			line-height: 1
+
+	.mobile-button
+		position: absolute
+		top: 10px
+		right: 10px
+		cursor: pointer
+		border: 3px solid $darkBlue
+		padding: 10px 5px
+		display: none
+
+		&:hover
+			border-color: $orange
+
+		+breakpoint(0 850px)
+			display: block
+	
+		.burger-icon
+			@include burger(25px, 3px, 5px, $darkBlue)
+
+			&.active
+				@include burger-to-cross
+
+	.nav_toolbar
+		height: 2em
+		background-color: $darkBlue
+		margin-top: 5px
+		+transition(all .3s ease-in-out)
+		+breakpoint(0 850px)
+			height: 3px
+
+		&.active
+			display: block
+			height: 200px
+			
+
+		.toolbar
+			height: 100%
+			list-style-type: none
+			display: table
+			table-layout: fixed
+			+transition(all .3s ease-in-out)
+			+breakpoint(0 850px)
+				display: block
+				height: auto
+				opacity: 0
+
+				&.active
+					opacity: 1
+
+			li
+				display: table-cell
+				width: auto
+				text-align: center
+				padding-left: 5px
+				border-left: 1px solid $white
+				vertical-align: middle
+				+transition(all .2s ease-in-out)
+				+breakpoint(0 850px)
+					display: block
+					opacity: 0
+					background-color: $darkBlue
+					border-left: 0
+					border-bottom: 1px solid $white
+					padding: 10px 0
+					+transition(all .1s ease-in-out)
+
+					&.active
+						opacity: 1
+						+transition(all .75s ease-in-out)
+
+				&:hover
+					background-color: $blue
+
+					a
+						text-decoration: underline
+
+				&:last-child
+					background-color: $orange
+					border-right: 1px solid $white
+					+breakpoint(0 850px)
+						border-right: 0
+
+				a
+					display: inline-block
+					width: 100%
+					color: $white
+					text-decoration: none
+
+
+.partner_school
+	width: 50%
+	display: inline-block
+	text-align: center
+	+breakpoint(0 800px)
+		width: 100%
+		display: block
+
+	.partner_school_image
+		width: 80%
+		max-width: 300px
+		margin: 0 auto
+
+	.mobile--partner_school__description
+		display: none
+
+.partner_school__descriptions-container
+
+	.partner_school__description
+		margin-top: 20px
+		display: none
+
+.team
+	.team-row
+		&.last
+			margin-top: 20px
+
+		.personnel
+			width: 33%
+			display: inline-block
+			text-align: center
+			vertical-align: top
+			+breakpoint(0 800px)
+				width: 100%
+				display: block
+				margin: 20px auto
+
+			.image
+				width: 100%
+				max-width: 220px
+
+			.bio
+				display: none
+
+.team-row__bio-container
+	.bio
+		display: none
+		margin-top: 20px 
+
+footer
+	padding: 10px
+	text-align: center
+	background-color: $white
+	color: $blue
+	margin-top: 20px
+	border-top: 3px solid $blue
+
+	#footer_quote
+		margin-bottom: 8px
+		font-size: 26px
+		font-weight: 100
+
+.video
+	margin: 10px auto
+	+breakpoint(0 800px)
+		width: 100%
+
+	img
+		max-width: 100%
+
+.section-wrapper
+	.section-header
+		display: table
+		width: 100%
+		height: 100px
+		background-color: $darkBlue
+		background-image: url('../images/mosaic/mosaic_home.jpg')
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center
+		position: relative
+		z-index: -1
+
+		&:after
+			content: ''
+			display: block
+			width: 100%
+			height: 100%
+			background-color: $darkBlue
+			position: absolute
+			top: 0
+			left: 0
+			opacity: .65
+			z-index: -1
+
+		h2
+			color: $white
+			display: table-cell
+			height: 100%
+			vertical-align: bottom
+			padding-bottom: 5px
+
+	&#partners
+		.section-header
+			background-image: url('../images/mosaic/mosaic_1a.jpg')
+
+	&#team
+		.section-header
+			background-image: url('../images/mosaic/mosaic_1b.jpg')
+
+	&#donate
+		.section-header
+			background-image: url('../images/mosaic/mosaic_12.jpg')
+
+.section-contents
+	padding: 15px 0
+
+.section-title
+	margin: 20px
+	text-align: center
+
+.donate-form
+	text-align: center
+
+	img
+		border: 0
+
+.contact_form
+	.contact-inputs-container
+		display: table
+		width: 80%
+		margin: 0 auto
+		table-layout: fixed
+		+breakpoint(801 1000px)
+			width: 90%
+		+breakpoint(551px 800px)
+			width: 100%
+		+breakpoint(0 550px)
+			display: block
+			width: 100%
+
+		.contact-inputs
+			display: table-cell
+			width: 100%
+			vertical-align: top
+			+breakpoint(0 550px)
+				display: block
+
+	label
+		display: block
+		margin-bottom: 5px
+
+	input
+		width: 80%
+		margin-bottom: 10px
+		border: 0
+		border-bottom: 3px solid $orange
+		+breakpoint(0 550px)
+			width: 100%
+
+		&:focus
+			border-color: $blue
+			outline: 0
+
+	textarea
+		width: 100%
+		height: 200px
+		border: 0
+		border-bottom: 3px solid $orange
+
+		&:focus
+			border-color: $blue
+			outline: 0
+
+	.contact-submit
+		margin: 20px auto
+		text-align: center
+
+.sent
+	display: none
+

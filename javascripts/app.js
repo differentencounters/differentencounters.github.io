@@ -1,101 +1,92 @@
-function displayBios() {
-  $('#ray .bio').show();
+var differentEncounters = {
+	init: function() {
+		this.navSlideTransition();
+		this.renderDescriptions();
+		this.sendFormData();
+		this.renderMobileNav();
+	},
+	isMobile: function() {
+		return $(window).width() <= 800;
+	},
+	navSlideTransition: function() {
+		$('nav a[href^="#"]').click(function(e) {
+			e.preventDefault();
 
-  $('.personnel .name .name_link').on('click', function(e) {
-    e.preventDefault();
-    var thisBio = this.parentElement.parentElement.parentElement.lastElementChild
-    $('.bio').slideUp();
-    if ($(thisBio).is(':hidden')) {
-     $(thisBio).slideDown();
-   }
- })
-}
+			var target = this.hash;
 
-function loadPageContent() {
-  // Loads pages from the nav bar
-  $('.toolbar li a').on('click', function(e) {
-    e.preventDefault();
-    var id = this.id;
-    if (id === "contact") {
-      $('.container').load(id + '.html')
-      setTimeout(function() {
-        sendFormData();
-        console.log('send form data');
-      }, 100)
-    }
-    $('.container').load(id + '.html');
-  })
+			$('html, body').stop().animate({
+				'scrollTop': $(target).offset().top
+			}, 500, 'swing', function () {
+				window.location.hash = target;
+			});
 
-  // Loads Mosaic Partners page
-  $(document).on('click', '#mosaic', function(e) {
-    e.preventDefault();
-    $('.container').load('mosaic.html');
-    setTimeout(function() {
-      console.log('image carousel loaded');
-      imageCarousel();
-    }, 100)
-  })
+			if (differentEncounters.isMobile()) {
+				differentEncounters.toggleActiveClasses();
+			}
 
-  // Loads contact form from Donations page
-  $(document).on('click', '#contact_us', function(e) {
-    e.preventDefault();
-    $('.container').load('contact.html');
-    setTimeout(function() {
-      sendFormData();
-      console.log('send form data');
-    }, 100)
-  })
-}
+		});
+	},
+	sendFormData: function() {
+		$('.form').on('submit', function(e) {
+			e.preventDefault();
+			var nameField = $('.form_name');
+			var name = nameField.val();
+			var emailField = $('.form_email');
+			var email = emailField.val().replace('@', '%40');
+			var subjectField = $('.form_subject');
+			var subject = subjectField.val();
+			var messageField = $('.form_message');
+			var message = messageField.val().replace(' ', '+');
+			$.ajax({
+				url: '//formspree.io/andrey@differentencouters.org',
+				method: 'post',
+				data: {name: name, _replyto: email, _subject: subject, message: message},
+				dataType: 'json',
+				success: function(data) {
+					console.log('Form submitted')
+					$('.form').hide();
+					$('.sent').fadeIn();
+				}
+			});
+		});
+	},
+	renderDescriptions: function() {
+		$('.reveal-link').click(function(e) {
+			e.preventDefault();
 
-function pageInitializers() {
-  $('html').hide();
-  $('.container').load('home.html');
-  $('html').fadeIn();
-}
+			var divToShow = $(this).closest('.reveal-container').data('id');
+			if (differentEncounters.isMobile()) {
+				divToShow = $(this).closest('.reveal-container').data('mobile');
+			}
+			var $this = $('#'+divToShow);
+			var divClass = $($this).attr('class');
 
-function imageCarousel() {
-  $(".partner_school_carousel").owlCarousel({
-    navigation : true,
-    slideSpeed : 500,
-    paginationSpeed : 400,
-    singleItem:true
-  });
-}
+			$('.'+divClass).not($this).each(function(){
+				$(this).slideUp();
+			});
 
-function sendFormData() {
-  $('.form').on('submit', function(e) {
-    e.preventDefault();
-    var nameField = $('.form_name');
-    var name = nameField.val();
-    var emailField = $('.form_email');
-    var email = emailField.val().replace('@', '%40');
-    var subjectField = $('.form_subject');
-    var subject = subjectField.val();
-    var messageField = $('.form_message');
-    var message = messageField.val().replace(' ', '+');
-    $.ajax({
-      url: '//formspree.io/andrey@differentencouters.org',
-      method: 'post',
-      data: {name: name, _replyto: email, _subject: subject, message: message},
-      dataType: 'json',
-      success: function(data) {
-        console.log('Form submitted')
-        $('.form').hide();
-        $('.sent').fadeIn();
-      }
-    })
-  })
-}
-
-function stickyFooter() {
-  var bodyHeight = $('.container').height();
-  var windowHeight = $(window).height();
-  if (windowHeight > bodyHeight) {
-    $('.footer').css('position','absolute').css('bottom',0);
-  }
+			if ($this.is(':visible')) {
+				$($this).slideUp();
+			} else {
+				$($this).slideDown();
+			}
+		});
+	},
+	renderMobileNav: function() {
+		if (this.isMobile) {
+			$('.mobile-button').click(function() {
+				differentEncounters.toggleActiveClasses();
+			});
+		}
+	},
+	toggleActiveClasses: function() {
+		$('.mobile-button').find('span').toggleClass('active');
+		$('.nav_toolbar').toggleClass('active');
+		$('.toolbar').toggleClass('active');
+		$('.toolbar li').toggleClass('active');
+	}
 }
 
 $(function() {
-  pageInitializers()
-  loadPageContent();
-})
+	differentEncounters.init();
+});
