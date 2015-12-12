@@ -60,10 +60,11 @@ ul
 // SPECIFIC STYLES
 nav
 	#nav_title
-		a 
+		a
 			font-size: 1.7em
 			color: $blue
 			text-decoration: none
+			text-transform: uppercase
 			+breakpoint(0 500px)
 				font-size: 1.25em
 
@@ -91,7 +92,7 @@ nav
 
 		+breakpoint(0 850px)
 			display: block
-	
+
 		.burger-icon
 			@include burger(25px, 3px, 5px, $darkBlue)
 
@@ -109,7 +110,7 @@ nav
 		&.active
 			display: block
 			height: 210px
-			
+
 
 		.toolbar
 			height: 100%
@@ -212,7 +213,7 @@ nav
 .team-row__bio-container
 	.bio
 		display: none
-		margin-top: 20px 
+		margin-top: 20px
 
 footer
 	padding: 10px
