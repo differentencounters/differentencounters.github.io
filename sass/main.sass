@@ -112,10 +112,10 @@ nav
 		height: 2em
 		background-color: $darkBlue
 		margin-top: 5px
-		pointer-events: none
 		+transition(all .3s ease-in-out)
 		+breakpoint(0 850px)
 			height: 3px
+			pointer-events: none
 
 		&.active
 			display: block
@@ -127,12 +127,12 @@ nav
 			list-style-type: none
 			display: table
 			table-layout: fixed
-			pointer-events: none
 			+transition(all .3s ease-in-out)
 			+breakpoint(0 850px)
 				display: block
 				height: auto
 				opacity: 0
+				pointer-events: none
 
 				&.active
 					opacity: 1
