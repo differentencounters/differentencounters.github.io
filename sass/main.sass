@@ -60,18 +60,26 @@ ul
 // SPECIFIC STYLES
 nav
 	#nav_title
+		margin: 20px auto 10px auto
+
 		a
 			font-size: 1.7em
 			color: $blue
 			text-decoration: none
 			text-transform: uppercase
-			+breakpoint(0 500px)
+			line-height: 0.75em
+			+breakpoint(401px 500px)
 				font-size: 1.25em
+			+breakpoint(0 400px)
+				font-size: 1.15em
 
+		span
+			display: block
+			color: $blue
+			margin-left: 3px
+			font-size: .75em
 
 	#nav_quote
-		padding-bottom: 5px
-
 		p
 			color: $blue
 			padding-left: 3px
@@ -103,6 +111,7 @@ nav
 		height: 2em
 		background-color: $darkBlue
 		margin-top: 5px
+		pointer-events: none
 		+transition(all .3s ease-in-out)
 		+breakpoint(0 850px)
 			height: 3px
@@ -110,13 +119,14 @@ nav
 		&.active
 			display: block
 			height: 210px
-
+			pointer-events: initial
 
 		.toolbar
 			height: 100%
 			list-style-type: none
 			display: table
 			table-layout: fixed
+			pointer-events: none
 			+transition(all .3s ease-in-out)
 			+breakpoint(0 850px)
 				display: block
@@ -125,6 +135,7 @@ nav
 
 				&.active
 					opacity: 1
+					pointer-events: initial
 
 			li
 				display: table-cell
