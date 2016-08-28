@@ -78,6 +78,16 @@ nav
 			+breakpoint(0 400px)
 				font-size: 1.15em
 
+			&:before
+				content: "";
+				background-image: url(/build/img/de/de-logo-16.png);
+				width: 50px;
+				display: inline-block;
+				height: 65px;
+				background-size: contain;
+				background-repeat: no-repeat;
+				vertical-align: middle;
+
 	#nav_quote
 		p
 			color: $blue
@@ -250,7 +260,7 @@ footer
 	.section-header
 		display: table
 		width: 100%
-		height: 100px
+		height: 150px
 		background-color: $darkBlue
 		background-image: url('/build/img/mosaic/mosaic_home.jpg')
 		background-size: cover
@@ -281,6 +291,11 @@ footer
 	&#partners
 		.section-header
 			background-image: url('/build/img/mosaic/mosaic_1a.jpg')
+
+	&#programs
+		.section-header
+			background-image: url('/build/img/mosaic/mosaic_14.png')
+			background-position-y: 17%
 
 	&#team
 		.section-header
