@@ -78,15 +78,15 @@ nav
 			+breakpoint(0 400px)
 				font-size: 1.15em
 
-			&:before
-				content: "";
-				background-image: url(/build/img/de/de-logo-16.png);
-				width: 50px;
-				display: inline-block;
-				height: 65px;
-				background-size: contain;
-				background-repeat: no-repeat;
-				vertical-align: middle;
+			// &:before
+			// 	content: "";
+			// 	background-image: url(/build/img/de/de-logo-16.png);
+			// 	width: 50px;
+			// 	display: inline-block;
+			// 	height: 65px;
+			// 	background-size: contain;
+			// 	background-repeat: no-repeat;
+			// 	vertical-align: middle;
 
 	#nav_quote
 		p
@@ -210,7 +210,7 @@ nav
 
 .team
 	.team-row
-		&.last
+		&:not(:first)
 			margin-top: 20px
 
 		.personnel
@@ -229,11 +229,15 @@ nav
 
 			.bio
 				display: none
+				text-align: left
 
 .team-row__bio-container
 	.bio
 		display: none
 		margin-top: 20px
+
+		p:last-child
+			margin-bottom: 20px
 
 footer
 	padding: 10px
