@@ -23,14 +23,15 @@ var paths = {
         js: ['./src/js/**/*.js'],
         img: ['./src/images/**/*'],
         appJs: ['./src/js/index.js'],
-        html: ['./src/views/**/*.ejs']
+        html: ['./src/views/**/*.ejs'],
+        indexHtml: ['./src/views/pages/index.ejs']
     },
     dest: {
         dist: './',
         css: './build/css',
         js: './build/js',
         img: './build/img',
-        html: './build/html/'
+        html: './build/html/',
     },
     breakpointStylesheets: './node_modules/breakpoint-sass/stylesheets',
     normalizeStylesheets: './node_modules/normalize.css'
@@ -90,6 +91,11 @@ gulp.task('image', function() {
     return gulp.src(paths.src.img)
     .pipe(imagemin())
     .pipe(gulp.dest(paths.dest.img))
+});
+
+gulp.task('index', function() {
+    return gulp.src(paths.dest.html + 'pages/index.html')
+    .pipe(gulp.dest(paths.dest.dist))
 });
 
 // Reload html file when changes are saved
