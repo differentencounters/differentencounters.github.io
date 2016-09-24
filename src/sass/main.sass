@@ -30,6 +30,9 @@ body
 .orange
 	color: $orange
 
+.blue
+	color: $darkBlue
+
 .underline
 	text-decoration: underline
 
@@ -65,7 +68,6 @@ nav
 	position: relative
 
 	#nav_title
-		margin: 20px auto 10px auto
 
 		a
 			font-size: 1.7em
@@ -73,9 +75,8 @@ nav
 			text-decoration: none
 			text-transform: uppercase
 			line-height: 0.75em
-			+breakpoint(401px 500px)
-				font-size: 1.25em
-			+breakpoint(0 400px)
+			letter-spacing: -2px
+			+breakpoint(0 767px)
 				font-size: 1.15em
 
 			&:before
@@ -83,10 +84,13 @@ nav
 				background-image: url(/build/img/de/de-logo-16.png);
 				width: 50px;
 				display: inline-block;
-				height: 65px;
+				height: 60px;
 				background-size: contain;
 				background-repeat: no-repeat;
 				vertical-align: middle;
+				+breakpoint(0 400px)
+					width: 40px
+					height: 45px
 
 	#nav_quote
 		p
