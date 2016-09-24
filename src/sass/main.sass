@@ -41,10 +41,10 @@ body
 
 img
 	width: 100%
-	border: 5px solid $blue
+	border: 5px solid $darkBlue
 
 	&:hover
-		border-color: $darkBlue
+		border-color: $accentBlue
 
 button
 	width: 100%
@@ -58,7 +58,7 @@ button
 	cursor: pointer
 
 	&:hover
-		background-color: $blue
+		background-color: $orange
 
 ul
 	list-style-position: inside
@@ -172,7 +172,7 @@ nav
 						transition: all .75s ease-in-out
 
 				&:hover
-					background-color: $accentBlue
+					background-color: $orange
 
 					a
 						text-decoration: underline
@@ -190,10 +190,15 @@ nav
 					text-decoration: none
 
 
+.partners__location
+	&:not(:last-child)
+		margin-bottom: 30px
+
 .partner_school
 	width: 50%
 	display: inline-block
 	text-align: center
+	vertical-align: top
 	+breakpoint(0 800px)
 		width: 100%
 		display: block
@@ -218,11 +223,11 @@ nav
 			margin-top: 20px
 
 		.personnel
-			width: 33%
+			width: 31%
 			display: inline-block
 			text-align: center
 			vertical-align: top
-			margin-top: 20px
+			margin: 1%
 			+breakpoint(0 800px)
 				width: 100%
 				display: block
@@ -231,6 +236,10 @@ nav
 			.image
 				width: 100%
 				max-width: 220px
+
+			.name
+				h3
+					margin-bottom: 7px
 
 			.bio
 				display: none
@@ -248,9 +257,8 @@ footer
 	padding: 10px
 	text-align: center
 	background-color: $white
-	color: $blue
 	margin-top: 20px
-	border-top: 3px solid $blue
+	border-top: 3px solid $darkBlue
 
 	#footer_quote
 		margin-bottom: 8px
@@ -320,6 +328,9 @@ footer
 .section-title
 	text-align: center
 
+	#donate &
+		margin-bottom: 30px
+
 .donate-form
 	text-align: center
 
@@ -354,23 +365,23 @@ footer
 	input
 		width: 80%
 		margin-bottom: 10px
-		border: 0
-		border-bottom: 3px solid $orange
+		border: 1px solid $borderGray
+		border-bottom: 3px solid $darkBlue
 		+breakpoint(0 550px)
 			width: 100%
 
 		&:focus
-			border-color: $blue
+			border-color: $orange
 			outline: 0
 
 	textarea
 		width: 100%
 		height: 200px
-		border: 0
-		border-bottom: 3px solid $orange
+		border: 1px solid $borderGray
+		border-bottom: 3px solid $darkBlue
 
 		&:focus
-			border-color: $blue
+			border-color: $orange
 			outline: 0
 
 	.contact-submit
