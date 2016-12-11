@@ -115,6 +115,6 @@ gulp.task('serve', function() {
 });
 
 // The default task (called when we run `gulp` from cli)
-gulp.task('default', ['js', 'sass', 'ejs', 'image'], function() {
+gulp.task('default', ['js', 'sass', 'ejs'], function() {
     gulp.run('serve');
 });
