@@ -33,12 +33,6 @@ body
 .blue
 	color: $darkBlue
 
-.underline
-	text-decoration: underline
-
-.bold
-	font-weight: 600
-
 img
 	width: 100%
 	border: 5px solid $darkBlue
@@ -393,3 +387,12 @@ footer
 
 	a
 		color: $darkBlue
+
+.gmap
+	display: block
+	width: 85%
+	max-width: 640px
+	height: 400px
+	margin: 0 auto
+	+breakpoint(0 768px)
+		height: 200px
