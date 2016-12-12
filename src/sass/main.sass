@@ -181,29 +181,26 @@ nav
 	display: flex
 	flex-direction: row
 
-	&:not(:last-child)
-		margin-bottom: 30px
-
 	+breakpoint(0 800px)
 		display: block
 
 .partner_school
 	flex: 1
-	display: flex
-	flex-direction: column
-	justify-content: flex-end
+    justify-content: space-between
+    align-content: space-between
+    display: flex
+    flex-direction: column
 	padding: 0 10px
 	text-align: center
-	vertical-align: top
 	+breakpoint(0 800px)
 		margin-bottom: 30px
 
 	.partner_school_image
-		flex-grow: 1
+		flex: 1
 
 	.partner_school__info
-		+breakpoint(0 800px)
-			padding: 15px
+		padding: 15px 0
+		align-self: flex-end
 
 	.mobile--partner_school__description
 		display: none
@@ -216,16 +213,18 @@ nav
 
 .team
 	.team-row
+		display: flex
+		justify-content: center
+		padding: 15px 0
 		text-align: center
 		&:not(:first)
 			margin-top: 20px
+		+breakpoint(0 800px)
+			display: block
+			padding: 0
 
 		.personnel
-			width: 31%
-			display: inline-block
-			text-align: center
-			vertical-align: top
-			margin: 1%
+			padding: 15px
 			+breakpoint(0 800px)
 				width: 100%
 				display: block
@@ -236,6 +235,7 @@ nav
 				max-width: 220px
 
 			.name
+				margin: 15px 0 0
 				h3
 					margin-bottom: 7px
 
@@ -351,7 +351,7 @@ footer
 
 		.contact-inputs
 			display: table-cell
-			width: 100%
+			width: 50%
 			vertical-align: top
 			+breakpoint(0 550px)
 				display: block
